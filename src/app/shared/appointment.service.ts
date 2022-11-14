@@ -1,13 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Appointment } from '../shared/Appointment';
-import {
-  AngularFireDatabase,
-  AngularFireList,
-  AngularFireObject,
-} from '@angular/fire/compat/database';
-@Injectable({
-  providedIn: 'root',
-})
+import {AngularFireDatabase,AngularFireList,AngularFireObject,} from '@angular/fire/compat/database';
+@Injectable({providedIn: 'root',})
+
 export class AppointmentService {
   bookingListRef: AngularFireList<any>;
   bookingRef: AngularFireObject<any>;
