@@ -13,6 +13,7 @@ export class AppointmentService {
       name: apt.name,
       email: apt.email,
       mobile: apt.mobile,
+      carrera: apt.carrera,
     });
   }
   // Get Single
@@ -31,6 +32,7 @@ export class AppointmentService {
       name: apt.name,
       email: apt.email,
       mobile: apt.mobile,
+      carrera: apt.carrera,
     });
   }
   // Delete

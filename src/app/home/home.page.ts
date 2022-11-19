@@ -29,6 +29,6 @@ export class HomePage implements OnInit {
   fetchBookings() {this.aptService.getBookingList().valueChanges().subscribe(res => {console.log(res);});}
   deleteBooking(id) {
     console.log(id);
-    if (window.confirm('Do you really want to delete?')) {this.aptService.deleteBooking(id);}
+    if (window.confirm('¿Seguro que desea eliminar este registro?')) {this.aptService.deleteBooking(id);}
   }
 }

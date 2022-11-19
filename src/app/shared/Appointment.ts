@@ -3,4 +3,5 @@ export class Appointment {
     name: string;
     email: string;
     mobile: number;
+    carrera:string;
 }
