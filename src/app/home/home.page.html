@@ -13,24 +13,21 @@
     <ion-item *ngFor="let booking of bookings" class="user-list">
       <ion-label>
         <h5>
-          <ion-icon name="person"></ion-icon> {{booking.name}}
+          <ion-icon name="person-outline"></ion-icon> {{booking.name}}
         </h5>
         <p>
-          <ion-icon name="call"></ion-icon> {{booking.mobile}}
+          <ion-icon name="call-outline"></ion-icon> {{booking.mobile}}
         </p>
         <p>
-          <ion-icon name="mail"></ion-icon> {{booking.email}}
+          <ion-icon name="mail-open-outline"></ion-icon> {{booking.email}}
         </p>
         <p>
-          <ion-icon name="paper"></ion-icon> {{booking.carrera}}
+          <ion-icon name="book-outline"></ion-icon> {{booking.carrera}}
         </p>
       </ion-label>
       <div class="item-note" item-end>
-        <button ion-button clear [routerLink]="['/edit-appointment/', booking.$key]">
-          <ion-icon name="create" style="zoom:2.0"></ion-icon>
-        </button>
         <button ion-button clear (click)="deleteBooking(booking.$key)">
-          <ion-icon name="trash" style="zoom:2.0"></ion-icon>
+          <ion-icon name="trash-outline" style="zoom:2.0"></ion-icon>
         </button>
       </div>
     </ion-item>
